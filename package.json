@@ -1,0 +1,39 @@
+{
+  "name": "ribbon.js",
+  "officialName": "ribbon.js",
+  "version": "1.0.0",
+  "summary": "only 1kb javascript gist to generate a ribbon in your website with HTML5 canvas.",
+  "description": "only 1kb javascript gist to generate a ribbon in your website with HTML5 canvas.",
+  "author": {
+    "name": "hustcc",
+    "url": "http://aibq.cn/"
+  },
+  "homepage": "http://aibq.cn/",
+  "license": "MIT",
+  "keywords": [
+    "canvas",
+    "html5",
+    "ribbon"
+  ],
+  "main": "dist/ribbon.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hustcc/ribbon.js"
+  },
+  "bugs": {
+    "url": "https://github.com/hustcc/ribbon.js/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2",
+    "gulp-rename": "^1.2.2"
+  },
+  "scripts": {
+    "lint": "jshint src/ribbon.js",
+    "test": "npm run lint && node test/index.js",
+    "build": "gulp mini && npm run test"
+  },
+  "dependencies": {
+  }
+}
