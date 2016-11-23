@@ -6,11 +6,11 @@
 
   // get user config
   var scripts = document.getElementsByTagName('script'),
-    script = scripts[scripts.length - 1]; //当前加载的script
+    script = scripts[scripts.length - 1]; // 当前加载的script
   config = {
-    z: attr(script, "zIndex", -1), //z-index
-    a: attr(script, "alpha", 0.6), //alpha
-    s: attr(script, "size", 90), //alpha
+    z: attr(script, "zIndex", -1), // z-index
+    a: attr(script, "alpha", 0.6), // alpha
+    s: attr(script, "size", 90), // size
   };
 
   var canvas = document.createElement('canvas'),
@@ -30,7 +30,7 @@
   g2d.scale(pr, pr);
   g2d.globalAlpha = config.a;
 
-  canvas.style.cssText = 'position:absolute;top:0;left:0;z-index: ' + config.z + ';width:100%;height:100%;pointer-events:none;';
+  canvas.style.cssText = 'position:fixed;top:0;left:0;z-index: ' + config.z + ';width:100%;height:100%;pointer-events:none;';
   // create canvas
   document.getElementsByTagName('body')[0].appendChild(canvas);
 
