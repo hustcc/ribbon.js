@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2016 hustcc
+ * License: MIT
+ * Version: v1.0.1
+ * GitHub: https://github.com/hustcc/ribbon.js
+**/
 /*jshint -W030 */
 ! function() {
   function attr(node, attr, default_value) {
