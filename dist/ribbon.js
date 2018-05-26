@@ -35,8 +35,7 @@
   canvas.height = height * pr;
   g2d.scale(pr, pr);
   g2d.globalAlpha = config.a;
-
-  canvas.style.cssText = 'position:fixed;top:0;left:0;z-index: ' + config.z + ';width:100%;height:100%;pointer-events:none;';
+  canvas.style.cssText = 'opacity: ' + config.a + ';position:fixed;top:0;left:0;z-index: ' + config.z + ';width:100%;height:100%;pointer-events:none;';
   // create canvas
   document.getElementsByTagName('body')[0].appendChild(canvas);
 
@@ -45,7 +44,7 @@
     q = [{x: 0, y: height * 0.7 + f}, {x: 0, y: height * 0.7 - f}];
     while(q[1].x < width + f) draw(q[0], q[1]);
   }
-  function draw(i, j) {   
+  function draw(i, j) {
     g2d.beginPath();
     g2d.moveTo(i.x, i.y);
     g2d.lineTo(j.x, j.y);

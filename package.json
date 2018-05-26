@@ -1,7 +1,7 @@
 {
   "name": "ribbon.js",
   "officialName": "ribbon.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "summary": "only 1kb javascript gist to generate a ribbon in your website with HTML5 canvas.",
   "description": "only 1kb javascript gist to generate a ribbon in your website with HTML5 canvas.",
   "author": {
